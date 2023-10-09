@@ -1,0 +1,13 @@
+identifier: stm32f7
+name: ST STM32F746G Discovery
+type: mcu
+arch: arm
+simulation: renode
+simulation_exec: renode
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+ram: 256
+flash: 1024
+vendor: st

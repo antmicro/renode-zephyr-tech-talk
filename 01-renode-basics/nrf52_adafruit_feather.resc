@@ -1,0 +1,15 @@
+using sysbus
+$name?="nrf52_adafruit_feather"
+mach create $name
+
+machine LoadPlatformDescription $ORIGIN/nrf52_adafruit_feather.repl
+
+showAnalyzer uart0
+
+macro reset
+"""
+    sysbus LoadELF $ORIGIN/nrf52_adafruit_feather-zephyr-shell_module.elf
+    cpu0 VectorTableOffset `sysbus GetSymbolAddress "_vector_table"`
+"""
+
+runMacro $reset

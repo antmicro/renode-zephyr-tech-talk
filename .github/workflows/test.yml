@@ -1,0 +1,35 @@
+name: Test Zephyr Tech Talk repo
+on:
+  push:
+jobs:
+
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: gaurav-nelson/github-action-markdown-link-check@v1
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    - name: Run tests
+      uses: antmicro/renode-test-action@v3.1.0
+      with:
+        renode-version: 'latest'
+        tests-to-run: '02-automation/03-testing.robot'
+    - name: Upload artifacts
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: |
+          robot_output.xml
+          log.html
+          report.html
+          snapshots/
+          logs/
+

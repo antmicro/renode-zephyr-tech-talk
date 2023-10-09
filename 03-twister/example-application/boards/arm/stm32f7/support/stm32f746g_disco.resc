@@ -1,0 +1,17 @@
+:description: This script is prepared to run Zephyr on stm32f746g_disco
+:name: stm32f746g_disco
+
+$name?="stm32f746g_disco"
+
+using sysbus
+mach create $name
+
+machine LoadPlatformDescription $ORIGIN/stm32f746g_disco.repl
+
+showAnalyzer usart1
+
+macro reset
+"""
+    sysbus LoadELF $bin
+"""
+runMacro $reset

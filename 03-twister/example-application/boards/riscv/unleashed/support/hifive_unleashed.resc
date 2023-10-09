@@ -1,0 +1,17 @@
+:description: This script is prepared to run Zephyr on SiFive-FU540 board.
+:name: SiFive-FU540
+
+$name?="SiFive-FU540"
+
+using sysbus
+mach create $name
+
+machine LoadPlatformDescription $ORIGIN/sifive-fu540.repl
+
+showAnalyzer uart0
+
+macro reset
+"""
+    sysbus LoadELF $bin
+"""
+runMacro $reset

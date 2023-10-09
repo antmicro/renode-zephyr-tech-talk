@@ -1,0 +1,7 @@
+# Robot test files
+report.html
+log.html
+robot_output.xml
+results-*.xml
+logs/
+snapshots/

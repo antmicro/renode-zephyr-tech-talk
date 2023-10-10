@@ -6,6 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
     - name: Run tests
       uses: antmicro/renode-test-action@v3.1.0
       with:

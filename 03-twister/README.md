@@ -16,7 +16,7 @@ Then enter the ``example_application`` directory and run tests:
 west twister --platform unleashed -T hello_world
 ```
 
-or, for more detailed output:
+or, for a more detailed output:
 
 ```
 west twister -vv --platform unleashed -T hello_world
@@ -24,6 +24,7 @@ west twister -vv --platform unleashed -T hello_world
 
 Robot-based test can be run with:
 
+```
 west twister --platform unleashed -T shell_module
 ```
 

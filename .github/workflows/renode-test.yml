@@ -1,0 +1,13 @@
+name: Run Robot test
+on:
+  push:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Run tests
+      uses: antmicro/renode-test-action@v3.1.0
+      with:
+        renode-version: 'latest'
+        tests-to-run: '02-automation/03-testing.robot'

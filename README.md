@@ -22,15 +22,9 @@ Packages for other OSes can be found on [builds.renode.io](https://builds.renode
 
 ## Setup Zephyr
 
-Some of the presented scenarios assumed Zephyr to be cloned with ``west`` in the ``zephyr`` directory.
+Some of the presented scenarios require you to use Zephyr's ``west`` tool and to have the Zephyr SDK installed.
 
-To set it up, follow [Zephyr Getting Started Guide](https://docs.zephyrproject.org/latest/develop/getting_started/index.html).
-
-```
-west init zephyr
-cd zephyr
-west update
-```
+To set them up, follow [Zephyr Getting Started Guide](https://docs.zephyrproject.org/latest/develop/getting_started/index.html).
 
 ## Renode links
 
@@ -45,3 +39,4 @@ west update
 * [Renodepedia](https://renodepedia.renode.io/)
 * [dts2repl](https://github.com/antmicro/dts2repl)
 * [pyrenode](https://github.com/antmicro/pyrenode)
+* [Renode GitHub action](https://github.com/antmicro/renode-test-action)

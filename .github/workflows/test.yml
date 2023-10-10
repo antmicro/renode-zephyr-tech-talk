@@ -21,3 +21,15 @@ jobs:
       with:
         renode-version: 'latest'
         tests-to-run: '02-automation/03-testing.robot'
+    - name: Upload artifacts
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: test-results
+        path: |
+          robot_output.xml
+          log.html
+          report.html
+          snapshots/
+          logs/
+

@@ -17,6 +17,18 @@ For Linux users we recommend obtaining the [portable nightly build](https://buil
 
 Packages for other OSes can be found on [builds.renode.io](https://builds.renode.io/).
 
+## Setup Zephyr
+
+Some of the presented scenarios assumed Zephyr to be cloned with ``west`` in the ``zephyr`` directory.
+
+To set it up, follow [Zephyr Getting Started Guide](https://docs.zephyrproject.org/latest/develop/getting_started/index.html).
+
+```
+west init zephyr
+cd zephyr
+west update
+```
+
 ## Renode links
 
 * [Renode homepage](https://renode.io)

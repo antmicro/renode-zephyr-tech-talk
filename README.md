@@ -9,6 +9,14 @@ You can watch it on [YouTube](https://www.youtube.com/watch?v=hBODmrYUzV0).
 
 * [01-renode-basics](01-renode-basics) - running a simple demo in Renode, scriptability
 
+## How to get Renode?
+
+Please refer to our [installation instructions in Renode README](https://github.com/renode/renode/#installation).
+
+For Linux users we recommend obtaining the [portable nightly build](https://builds.renode.io/renode-latest.linux-portable.tar.gz) or installing Renode via the [renode-run Python package](https://github.com/antmicro/renode-run).
+
+Packages for other OSes can be found on [builds.renode.io](https://builds.renode.io/).
+
 ## Renode links
 
 * [Renode homepage](https://renode.io)

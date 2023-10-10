@@ -72,3 +72,14 @@ Resource                      ${KEYWORDS}
 ```
 
 With the resource defined as above you can use the ``Prepare Machine`` keyword to set up the platform based on your Twister target and load the appropriate elf file.
+
+## Regenerating platform description
+
+The platform description file, ``boards/riscv/unleashed/support/sifive-fu540.repl``, was generated using the ``dts2repl`` tool.
+
+To rebuild the platform from a DTS file, run the following:
+
+```
+west build -p -b unleashed hello_world
+dts2repl build/zephyr/zephyr.dts --output boards/riscv/unleashed/support/sifive-fu540.repl
+```

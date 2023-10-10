@@ -8,6 +8,9 @@ You can watch it on [YouTube](https://www.youtube.com/watch?v=hBODmrYUzV0).
 ## Table of contents
 
 * [01-renode-basics](01-renode-basics) - running a simple demo in Renode, scriptability
+* [02-automation](02-automation) - using Renode in batch mode
+* [03-twister](03-twister) - details on West and Twister integration
+
 
 ## How to get Renode?
 

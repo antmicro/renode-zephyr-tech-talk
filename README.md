@@ -40,3 +40,4 @@ west update
 * [Renode Zephyr Dashboard](https://zephyr-dashboard.renode.io/)
 * [Renode U-Boot Dashboard](https://u-boot-dashboard.renode.io/)
 * [Renodepedia](https://renodepedia.renode.io/)
+* [dts2repl](https://github.com/antmicro/dts2repl)

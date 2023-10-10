@@ -5,8 +5,11 @@ Copyright (c) 2023 [Antmicro](https://www.antmicro.com)
 This is a companion repository to the Zephyr Tech Talk.
 
 You can watch it on [YouTube](https://www.youtube.com/watch?v=hBODmrYUzV0).
+## Table of contents
 
-Renode links:
+* [01-renode-basics](01-renode-basics) - running a simple demo in Renode, scriptability
+
+## Renode links
 
 * [Renode homepage](https://renode.io)
 * [Renode sources](https://github.com/renode/renode)

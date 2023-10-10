@@ -28,11 +28,11 @@ Robot-based test can be run with:
 west twister --platform unleashed -T shell_module
 ```
 
-To see more details on the test results, open ``twister-out/unleashed/sample.shell.shell_module.robot/report.html``.
+To see more details on the test results, open ``twister-out/unleashed/sample.shell.shell_module.robot/report.html`` in your browser.
 
 ## Enabling Renode support in boards
 
-To see how Renode support was enabled for the ``unleashed`` target, the following entries have been added.
+To enable Renode support for the ``unleashed`` target, the following entries have been added.
 
 In ``unleashed.yaml``:
 
@@ -49,7 +49,7 @@ set(RENODE_SCRIPT ${CMAKE_CURRENT_LIST_DIR}/support/hifive_unleashed.resc)
 set(RENODE_UART sysbus.uart0)
 ```
 
-Also, the ``support/hifive_unleashed.resc`` was added to describe the Renode configuration for this board.
+Also, the ``support/hifive_unleashed.resc`` file was added to describe the Renode configuration for this board.
 
 ## Enabling Robot test in samples
 
@@ -67,6 +67,8 @@ This required a change to the sample's ``sample.yaml`` file:
 The ``shell_module.robot`` file needs to include the following section:
 
 ```
+*** Settings ***
+Resource                      ${KEYWORDS}
 ```
 
 With the resource defined as above you can use the ``Prepare Machine`` keyword to set up the platform based on your Twister target and load the appropriate elf file.

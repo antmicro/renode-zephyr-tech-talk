@@ -41,3 +41,4 @@ To set them up, follow [Zephyr Getting Started Guide](https://docs.zephyrproject
 * [pyrenode](https://github.com/antmicro/pyrenode)
 * [Renode GitHub action](https://github.com/antmicro/renode-test-action)
 * [Renode Linux runner action](https://github.com/antmicro/renode-linux-runner-action/)
+* [Antmicro blog](https://antmicro.com/blog/)

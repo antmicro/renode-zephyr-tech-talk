@@ -2,7 +2,7 @@
 
 ## Renode in headless mode
 
-A headless mode can be easily automated with ``expect`` and similar tools.
+Headless mode can be easily automated with ``expect`` and similar tools.
 
 Run:
 
@@ -39,7 +39,7 @@ Install the ``pyrenode`` tool:
 pip install --user git+https://github.com/antmicro/pyrenode.git
 ```
 
-Run ``./02-pyrenode.py`` to see Renode connected via Python API.
+Run ``./02-pyrenode.py`` to see Renode connected via the Python API.
 
 ## Robot testing
 

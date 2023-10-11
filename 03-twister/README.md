@@ -1,6 +1,6 @@
 # 03-twister
 
-The ``example-application`` directory contains a custom board called ``unleashed`` (being a renamed version of Zephyr's ``hifive_unleashed`` target) and two samples, ``hello_world`` and ``shell_module``, copied there for convenience.
+The ``example-application`` directory contains a custom board called ``unleashed`` (a renamed version of Zephyr's ``hifive_unleashed`` target) and two samples, ``hello_world`` and ``shell_module``, copied there for convenience.
 
 ## Running tests
 
@@ -22,7 +22,7 @@ or, for a more detailed output:
 west twister -vv --platform unleashed -T hello_world
 ```
 
-Robot-based test can be run with:
+The Robot-based test can be run with:
 
 ```
 west twister --platform unleashed -T shell_module
@@ -32,7 +32,7 @@ To see more details on the test results, open ``twister-out/unleashed/sample.she
 
 ## Enabling Renode support in boards
 
-To enable Renode support for the ``unleashed`` target, the following entries have been added.
+To enable Renode support for the ``unleashed`` target, the entries below have been added.
 
 In ``unleashed.yaml``:
 
@@ -71,7 +71,7 @@ The ``shell_module.robot`` file needs to include the following section:
 Resource                      ${KEYWORDS}
 ```
 
-With the resource defined as above you can use the ``Prepare Machine`` keyword to set up the platform based on your Twister target and load the appropriate elf file.
+With the resource defined as above, you can use the ``Prepare Machine`` keyword to set up the platform based on your Twister target and load the appropriate ELF file.
 
 ## Regenerating platform description
 

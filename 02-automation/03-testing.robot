@@ -5,6 +5,7 @@ ${PROMPT}                     uart:~$
 
 *** Keywords ***
 Prepare Machine
+    Execute Command           $bin=@https://dl.antmicro.com/projects/renode/generic_leon3-zephyr-shell_module.elf-s_973840-d4749b06d75be94be2b516ff84952566bec260a2
     Execute Script            ${SCRIPT}
 
     Create Terminal Tester    ${UART}  timeout=1
@@ -27,4 +28,4 @@ Should Print Version
     Requires                  booted-zephyr
 
     Write Line To Uart        version
-    Wait For Line On Uart     Zephyr version 2.6.99
+    Wait For Line On Uart     Zephyr version 3.4.99

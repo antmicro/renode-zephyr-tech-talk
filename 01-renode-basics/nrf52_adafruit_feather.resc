@@ -10,7 +10,6 @@ macro reset
 """
     sysbus LoadELF $ORIGIN/nrf52_adafruit_feather-zephyr-shell_module.elf
     cpu0 VectorTableOffset `sysbus GetSymbolAddress "_vector_table"`
-
 """
 
 runMacro $reset

@@ -40,3 +40,4 @@ To set them up, follow [Zephyr Getting Started Guide](https://docs.zephyrproject
 * [dts2repl](https://github.com/antmicro/dts2repl)
 * [pyrenode](https://github.com/antmicro/pyrenode)
 * [Renode GitHub action](https://github.com/antmicro/renode-test-action)
+* [Renode Linux runner action](https://github.com/antmicro/renode-linux-runner-action/)
